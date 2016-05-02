@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="widgetButtonStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@android:drawable/btn_minus</item>
+    </style>
+
+    <style name="kickerAppNameStyle" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+    <style name="activityHeadTextStyle">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+    <style name="appkicker" parent="@android:style/Theme.Light.NoTitleBar">
+        
+    </style>
+
+</resources>

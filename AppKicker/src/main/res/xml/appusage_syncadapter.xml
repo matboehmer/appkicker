@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentAuthority="org.appkicker.app"
+    android:accountType="org.appkicker.app.ACCOUNT_TYPE"
+    android:supportsUploading="false"
+    android:enabled="true"
+    android:userVisible="true" />

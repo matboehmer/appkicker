@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for sampling rate -->
+    <string-array name="samplerateLabels">
+        <item>100 ms</item>
+        <item>500 ms (default)</item>
+        <item>1 sec</item>
+        <item>2 sec</item>
+        <item>10 sec</item>
+	</string-array>
+    <string-array name="samplerateValues">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>10000</item>
+    </string-array>
+    <!-- for sync rate -->
+    <string-array name="syncrateLabels">
+        <item>every 5 min</item>
+        <item>every 30 min</item>
+        <item>every 1 h</item>
+        <item>every 6 h (default)</item>
+        <item>every 12 h</item>
+	</string-array>
+    <string-array name="syncrateValues">
+        <item>5</item>
+        <item>30</item>
+        <item>60</item>
+        <item>360</item>
+        <item>720</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppKicker</string>
+    <string name="widget_title">AppKicker</string>
+    <string name="defaultKickName">Kicking</string>
+    <string name="accepttouse">Sorry, you have to accept for using widget.</string>
+    <string name="noappsforkicker">Currently no shortcuts available.\nStart using some apps :-)</string>
+    <string name="noappsforkickerRece">We aren\'t aware of any app you have used recently.\nKeep using your apps and we\'ll figure it out!</string>
+    <string name="noappsforkickerMost">We don\'t know yet which apps you mostly use.\nKeep using your apps, we\'ll count for you!</string>
+    <string name="noappsforkickerSequ">No sequential apps available.\nKeep using your apps, we\'ll learn what you use next!</string>
+    <string name="disclaimer_decline">No, decline</string>
+    <string name="disclaimer_accept">Yes, accept</string>
+    <string name="app_nameInLauncher">AppKicker</string>
+    <string name="chooseAlgoPrompt">Choose method</string>
+
+    <string-array name="algs_array">
+        <item>Scientific (recommended)</item>
+        <item>PPM (recommended)</item>
+        <item>Recently used apps</item>
+        <item>Most used apps</item>
+        <item>Sequentially used apps</item>
+        <item>Locally used apps</item>
+    </string-array>
+
+    <string name="chooseBackgroundPrompt">Choose background</string>
+
+    <string-array name="background_array">
+        <item>Grey (default)</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Transparent</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

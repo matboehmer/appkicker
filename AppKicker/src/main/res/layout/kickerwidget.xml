@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kickerwidget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appwidget_grey"
+    
+    >
+
+<!--     
+	android:background="@drawable/appwidget_dark_bg" 
+-->
+
+    <LinearLayout
+        android:id="@+id/noContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/noContentText"
+            style="@style/kickerAppNameStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="@string/noappsforkicker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/widget_margin" 
+        android:visibility="gone" >
+
+        <!-- 1st button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/widgetbutton1"
+                style="@style/widgetButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/appwidget_button_left"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/kickerText1"
+                style="@style/kickerAppNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultKickName" />
+        </LinearLayout>
+
+        <!-- 2nd button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/widgetbutton2"
+                style="@style/widgetButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/appwidget_button_center"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/kickerText2"
+                style="@style/kickerAppNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultKickName" />
+        </LinearLayout>
+
+        <!-- 3rd button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/widgetbutton3"
+                style="@style/widgetButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/appwidget_button_center"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/kickerText3"
+                style="@style/kickerAppNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultKickName" />
+        </LinearLayout>
+
+        <!-- 4th button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/widgetbutton4"
+                style="@style/widgetButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/appwidget_button_center"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/kickerText4"
+                style="@style/kickerAppNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultKickName" />
+        </LinearLayout>
+
+        <!-- 5th button -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/widgetbutton5"
+                style="@style/widgetButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/appwidget_button_right"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/kickerText5"
+                style="@style/kickerAppNameStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/defaultKickName" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

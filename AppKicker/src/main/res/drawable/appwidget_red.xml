@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- main background -->
+    <item>
+        
+	    <shape
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:shape="rectangle" >
+		
+		    <corners android:radius="5dp" />
+
+
+		    <!-- blue --> 
+		    <!-- 
+		    <gradient
+		        android:endColor="#003366"
+		        android:startColor="#028ac7"
+		        android:gradientRadius="220"
+		        android:centerY="-0.5"
+		        android:type="radial" />
+		    -->
+		    
+		    <!-- green --> 
+		    <!-- 
+		    <gradient
+		        android:endColor="#335633"
+		        android:startColor="#259b30"
+		        android:gradientRadius="220"
+		        android:centerY="-0.5"
+		        android:type="radial" />
+		    -->
+		    
+
+		    		    
+		    <!-- red --> 
+		    <!-- 
+		    -->
+		    <gradient
+		        android:endColor="#600410"
+		        android:startColor="#d00410"
+		        android:gradientRadius="220"
+		        android:centerY="-0.5"
+		        android:type="radial" />
+
+		    		    		   
+		    <!-- grey --> 
+		    <!-- 
+		    <gradient
+		        android:endColor="#1d1d1d"
+		        android:startColor="#6e6e6e"
+		        android:gradientRadius="220"
+		        android:centerY="-0.5"
+		        android:type="radial" />
+		    -->
+		
+		    <stroke
+		        android:width="15dp"
+		        android:color="@android:color/transparent" />
+		</shape>
+	</item>
+    
+        
+    <!-- light effect on top 
+	<item>
+	    <inset
+	        android:drawable="@drawable/appwidget_light"
+	        android:insetTop="0dp"
+		    android:insetRight="10dp"
+		    android:insetBottom="84dp"
+		    android:insetLeft="10dp"/>
+	</item>
+    -->
+    
+	</layer-list>

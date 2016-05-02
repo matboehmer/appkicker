@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_dark"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/activityHeadTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Recent Apps Widget"
+            android:textColor="#f0f0f0" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/border" />
+            
+    <android.webkit.WebView
+        android:id="@+id/disclaimerText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/button1"
+        android:layout_below="@+id/textView1"
+        android:layout_weight="1"
+        android:background="@color/grey_light" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_dark" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green"
+            android:onClick="onAgreeClick"
+            android:text="@string/disclaimer_accept" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_red"
+            android:onClick="onDeclineClick"
+            android:text="@string/disclaimer_decline" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

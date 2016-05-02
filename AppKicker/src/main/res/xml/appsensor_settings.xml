@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="appsensor Settings"
+	android:key="appsensor_settings">
+
+    
+   	<PreferenceCategory android:title="Sensor Settings">
+   	    <CheckBoxPreference 
+   	        android:key="settings_sensorsactive"
+   	        android:title="Active"
+   	        android:summaryOn="Logging application usage"
+   	        android:summaryOff="Not logging application usage"
+   	        android:defaultValue="true" />
+   	    <ListPreference 
+   	        android:key="settings_sensorsamplingrate" 
+			android:title="Sampling rate"
+			android:summary="Sampling rate in milliseconds"
+			android:defaultValue="500"
+			android:entries="@array/samplerateLabels"
+			android:entryValues="@array/samplerateValues"/>
+    </PreferenceCategory>
+    
+   	<PreferenceCategory android:title="Upload Settings">
+   	    <!-- 
+   	    <EditTextPreference
+   	        android:key="settings_serverip" 
+			android:title="Name"
+			android:summary="Name of web server (IP or domain)"
+			android:defaultValue="appsensor.dfki.de" />
+   	    <EditTextPreference
+   	        android:key="settings_serverport" 
+			android:title="Port" 
+			android:summary="Port number of web server"
+			android:defaultValue="80"/>
+   	    <EditTextPreference
+   	        android:key="settings_serverurl" 
+			android:title="URL to script" 
+			android:summary="Full URL to interactions.php"
+			android:defaultValue="http://some.server.net/interactions.php"/>
+   	    -->
+   	    <ListPreference 
+   	        android:key="settings_syncrate" 
+			android:title="Upload frequency"
+			android:summary="Time between server uploads"
+			android:defaultValue="360"
+			android:entries="@array/syncrateLabels"
+			android:entryValues="@array/syncrateValues"/>
+		<CheckBoxPreference 
+   	        android:key="settings_syncwifionly"
+   	        android:title="Only WiFi"
+   	        android:summaryOn="Only uploading if WiFi is available"
+   	        android:summaryOff="Uploading via any data network"
+   	        android:defaultValue="false" />
+    </PreferenceCategory>
+   	    
+   	<PreferenceCategory android:title="General">
+		<Preference 
+			android:key="settings_id" 
+			android:title="Installation ID"
+			android:summary="-- not set yet --"
+			android:shouldDisableView="false"/>
+		<Preference 
+			android:key="settings_deviceid" 
+			android:title="Device ID"
+			android:summary="-- not known yet --"
+			android:shouldDisableView="false"/>
+	</PreferenceCategory>
+</PreferenceScreen>
